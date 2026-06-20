@@ -11,7 +11,7 @@ body {
 .left-container {
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
+    background-color: rgb(243, 6, 6);
     width: 250px;
     height: 100vh;
 }
@@ -22,7 +22,7 @@ body {
     width: 250px;
     align-items: center;
     gap: 30px;
-    /* background-color: brown; */
+    background-color: brown;
     
 }
 
@@ -33,7 +33,6 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    /* background-color: bisque; */
 }
 
 .logo {
@@ -46,4 +45,45 @@ body {
 .heading {
     color: rgb(223, 222, 222);
     font-size: 25px;
+}
+
+/* mid-container */
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 250px;
+    /* background-color: aqua; */
+}
+
+/* mid-container first icon */
+.icons-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(5, 5, 5);
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.mid-icons {
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    margin-left: 20px;
+
+}
+
+.mid-text {
+    font-size: 15px;
+    color: rgb(223, 222, 222);
+}
+
+.icons-div:hover {
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
 }
