@@ -83,3 +83,10 @@ lastDiv.appendChild(firstElement);
 
 const library = document.createElement("img");
 library.classList.add("mid-icons");
+library.src = "icons/library.png";
+firstElement.appendChild(library);
+
+const libraryText = document.createElement("h2")
+libraryText.classList.add("mid-text");
+libraryText.textContent = "Library";
+firstElement.appendChild(libraryText);
