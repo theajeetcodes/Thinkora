@@ -71,4 +71,15 @@ searchText.classList.add("mid-text");
 searchText.textContent = "Search";
 secondIcon.appendChild(searchText);
 
+// last-container 
+const lastDiv = document.createElement("div");
+lastDiv.classList.add("last-div");
+leftContainer.appendChild(lastDiv);
 
+// lastDiv first element
+const firstElement = document.createElement("div");
+firstElement.classList.add("icons-div");
+lastDiv.appendChild(firstElement);
+
+const library = document.createElement("img");
+library.classList.add("mid-icons");
