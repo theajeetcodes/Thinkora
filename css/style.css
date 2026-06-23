@@ -71,15 +71,15 @@ body {
 }
 
 .mid-icons {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 30%;
     margin-left: 20px;
 
 }
 
 .mid-text {
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(223, 222, 222);
 }
 
@@ -95,4 +95,36 @@ body {
     /* background-color: aqua; */
     margin-top: 15px;
     gap: 10px;
+}
+
+.recent-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-text {
+    color: rgb(223, 222, 222);
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.recent-icons {
+    display: flex;
+    flex-direction: row;
+    /* margin: 0px; */
+    gap: 15px;
+
+}
+
+.recent-chat,
+.recent-project {
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+}
+
+.recent-div:hover {
+    cursor: pointer;
 }

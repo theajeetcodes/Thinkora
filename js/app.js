@@ -49,10 +49,10 @@ chartIcon.classList.add("mid-icons");
 chartIcon.src = "icons/newchart.png";
 firstIcon.appendChild(chartIcon);
 
-const charttext = document.createElement("h2");
-charttext.classList.add("mid-text");
-charttext.textContent = "New chat";
-firstIcon.appendChild(charttext);
+const chattext = document.createElement("h2");
+chattext.classList.add("mid-text");
+chattext.textContent = "New chat";
+firstIcon.appendChild(chattext);
 
 // middle-container second-icon-div
 const secondIcon = document.createElement("div");
@@ -105,3 +105,57 @@ const projectText = document.createElement("h2");
 projectText.classList.add("mid-text");
 projectText.textContent = "Projects";
 secondElement.appendChild(projectText);
+
+// lastDiv third element
+const thirdElement = document.createElement("div");
+thirdElement.classList.add("icons-div");
+lastDiv.appendChild(thirdElement);
+
+const app = document.createElement("img");
+app.classList.add("mid-icons");
+app.src = "icons/app.png";
+thirdElement.appendChild(app);
+
+const appText = document.createElement("h2");
+appText.classList.add("mid-text");
+appText.textContent = "Apps";
+thirdElement.appendChild(appText);
+
+// last div forth element 
+const forthElement = document.createElement("div");
+forthElement.classList.add("icons-div");
+lastDiv.appendChild(forthElement);
+
+const more = document.createElement("img");
+more.classList.add("mid-icons");
+more.src = "icons/more.png";
+forthElement.appendChild(more);
+
+const moreText = document.createElement("h2");
+moreText.classList.add("mid-text");
+moreText.textContent = "More";
+forthElement.appendChild(moreText);
+
+// recent 
+const recentDiv = document.createElement("div");
+recentDiv.classList.add("recent-div");
+lastDiv.appendChild(recentDiv);
+
+const recentText = document.createElement("h2");
+recentText.classList.add("recent-text");
+recentText.textContent = "Recents";
+recentDiv.appendChild(recentText);
+
+const recentIcons = document.createElement("div");
+recentIcons.classList.add("recent-icons");
+recentDiv.appendChild(recentIcons);
+
+const recentChat = document.createElement("img");
+recentChat.classList.add("recent-chat");
+recentChat.src = "icons/note.png";
+recentIcons.appendChild(recentChat);
+
+const recentProject = document.createElement("img");
+recentProject.classList.add("recent-project");
+recentProject.src = "icons/more.png";
+recentIcons.appendChild(recentProject);
