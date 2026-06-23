@@ -90,3 +90,18 @@ const libraryText = document.createElement("h2")
 libraryText.classList.add("mid-text");
 libraryText.textContent = "Library";
 firstElement.appendChild(libraryText);
+
+// lastDiv second element
+const secondElement = document.createElement("div")
+secondElement.classList.add("icons-div");
+lastDiv.appendChild(secondElement);
+
+const project = document.createElement("img");
+project.classList.add("mid-icons");
+project.src = "icons/project.png";
+secondElement.appendChild(project);
+
+const projectText = document.createElement("h2");
+projectText.classList.add("mid-text");
+projectText.textContent = "Projects";
+secondElement.appendChild(projectText);
