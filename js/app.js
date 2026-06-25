@@ -163,3 +163,44 @@ container.appendChild(leftContainer);
 createTopSection(leftContainer);
 createMidSection(leftContainer);
 createLastSection(leftContainer);
+
+// main container content
+
+function createThinkoraSection(parent) {
+
+    const navSection = document.createElement("div");
+    navSection.classList.add("nav-section");
+    parent.appendChild(navSection);
+
+    const thinkoraText = document.createElement("h1");
+    thinkoraText.classList.add("thinkora-text");
+    thinkoraText.textContent = "Thinkora";
+    navSection.appendChild(thinkoraText);
+
+    const navLeftDiv = document.createElement("div");
+    navLeftDiv.classList.add("nav-leftdiv");
+    navSection.appendChild(navLeftDiv);
+
+    const shareDiv = document.createElement("div");
+    shareDiv.classList.add("share-div");
+    navLeftDiv.appendChild(shareDiv);
+
+    const shareIcon = document.createElement("img");
+    shareIcon.classList.add("share-icon");
+    shareIcon.src = "icons/share.png";
+    shareIcon.alt = "Share Icon"
+    shareDiv.appendChild(shareIcon);
+
+    const shareText = document.createElement("h2");
+    shareText.classList.add("share-text");
+    shareText.textContent = "Share";
+    shareDiv.appendChild(shareText)
+
+    const moreIcon = document.createElement("img");
+    moreIcon.classList.add("share-icon");
+    moreIcon.src = "icons/more.png";
+    moreIcon.alt = "More Icon";
+    navLeftDiv.appendChild(moreIcon);
+}
+
+createThinkoraSection(container);

@@ -129,3 +129,44 @@ body {
 .recent-div:hover {
     cursor: pointer;
 }
+
+/* nav-section */
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 13px 0 0 25px;
+}
+
+.nav-leftdiv {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.thinkora-text {
+    color: rgb(223, 222, 222);
+    font-size: 30px;
+}
+
+.share-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 20px;
+    height: 50px;
+    width: 120px;
+}
+
+.share-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+}
+
+.share-text {
+    font-size: 16px;
+    color: rgb(223, 222, 222);
+}
