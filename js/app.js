@@ -166,6 +166,10 @@ createLastSection(leftContainer);
 
 // main container content
 
+const rightContainer = document.createElement("div");
+rightContainer.classList.add("right-container");
+container.appendChild(rightContainer);
+
 function createThinkoraSection(parent) {
 
     const navSection = document.createElement("div");
@@ -203,4 +207,17 @@ function createThinkoraSection(parent) {
     navLeftDiv.appendChild(moreIcon);
 }
 
-createThinkoraSection(container);
+// userchartsection
+function createChatSection(parent) {
+    const userchat = document.createElement("div");
+    userchat.classList.add("user-chat");
+    parent.appendChild(userchat);
+
+    const thinkoraPara = document.createElement("p");
+    thinkoraPara.classList.add("thinkora-para");
+    thinkoraPara.textContent = "Welcome to Thinkora";
+    userchat.appendChild(thinkoraPara);
+}
+
+createThinkoraSection(rightContainer);
+createChatSection(rightContainer);
