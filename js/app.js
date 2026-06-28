@@ -213,10 +213,14 @@ function createChatSection(parent) {
     userchat.classList.add("user-chat");
     parent.appendChild(userchat);
 
+    const paraDiv = document.createElement("div");
+    paraDiv.classList.add("para-div");
+    userchat.appendChild(paraDiv)
+
     const thinkoraPara = document.createElement("p");
     thinkoraPara.classList.add("thinkora-para");
     thinkoraPara.textContent = "Welcome to Thinkora";
-    userchat.appendChild(thinkoraPara);
+    paraDiv.appendChild(thinkoraPara);
 }
 
 createThinkoraSection(rightContainer);

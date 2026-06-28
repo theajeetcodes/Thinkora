@@ -184,5 +184,21 @@ body {
     flex-direction: column;
     height: 100%;
     width: 60%;
-    background-color: aqua;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.para-div {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    margin-top: 100px;
+    width: 300px;
+    /* background-color: blue; */
+}
+
+.thinkora-para {
+    font-size: 20px;
+    word-spacing: 5px;
+    color: aliceblue;
 }
