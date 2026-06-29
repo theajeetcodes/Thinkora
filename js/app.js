@@ -221,6 +221,11 @@ function createChatSection(parent) {
     thinkoraPara.classList.add("thinkora-para");
     thinkoraPara.textContent = "Welcome to Thinkora";
     paraDiv.appendChild(thinkoraPara);
+
+    //  user input div
+    const inputDiv = document.createElement("div");
+    inputDiv.classList.add("input-div");
+    userchat.appendChild(inputDiv);
 }
 
 createThinkoraSection(rightContainer);
