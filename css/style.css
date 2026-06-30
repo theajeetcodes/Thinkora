@@ -202,3 +202,11 @@ body {
     word-spacing: 5px;
     color: aliceblue;
 }
+
+.input-div {
+    display: flex;
+    height: 50px;
+    width: 70%;
+    background-color: rgb(95, 93, 93);
+    border-radius: 30px;
+}
