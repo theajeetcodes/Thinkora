@@ -203,10 +203,27 @@ body {
     color: aliceblue;
 }
 
-.input-div {
+.main-div {
     display: flex;
     height: 50px;
     width: 70%;
-    background-color: rgb(95, 93, 93);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(33, 32, 32);
     border-radius: 30px;
+}
+
+.chat-input {
+    background-color: rgb(33, 32, 32);
+    border: none;
+    color: white;
+    outline: none;
+    width: 80%;
+    font-size: 15px;
+}
+
+.right-div {
+    display: flex;
+    margin-right: 20px;
 }
