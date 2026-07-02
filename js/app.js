@@ -232,33 +232,41 @@ function createChatSection(parent) {
     leftDiv.classList.add("left-div");
     mainDiv.appendChild(leftDiv);
 
-    // const iconDiv = document.createElement("div");
-    // iconDiv.classList.add("first-div");
-    // leftDiv.appendChild(iconDiv);
-
     const addIcon = document.createElement("img");
-    addIcon.classList.add("mid-icons");
+    addIcon.classList.add("input-icons");
     addIcon.src = "icons/plus.png";
     addIcon.alt = "Add Icon";
     leftDiv.appendChild(addIcon);
 
-    const chatInput = document.createElement("input");
+    const inputDiv = document.createElement("div");
+    inputDiv.classList.add("first-div");
+    mainDiv.appendChild(inputDiv);
+
+    const chatInput = document.createElement("textarea");
     chatInput.classList.add("chat-input");
     chatInput.placeholder = "Ask anything";
-    mainDiv.appendChild(chatInput);
+    inputDiv.appendChild(chatInput);
+
+    chatInput.addEventListener("input", function () {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+
+        mainDiv.style.height = "auto";
+        mainDiv.style.minHeight = this.scrollHeight + 20 + "px";
+    });
 
     const rightDiv = document.createElement("div");
     rightDiv.classList.add("right-div");
     mainDiv.appendChild(rightDiv);
 
     const voiceIcon = document.createElement("img");
-    voiceIcon.classList.add("mid-icons");
+    voiceIcon.classList.add("input-icons");
     voiceIcon.src = "icons/voice.png";
     voiceIcon.alt = "Voice Icon";
     rightDiv.appendChild(voiceIcon);
 
     const audioIcon = document.createElement("img");
-    audioIcon.classList.add("mid-icons");
+    audioIcon.classList.add("input-icons");
     audioIcon.src = "icons/audio.png";
     audioIcon.alt = "Audio Icon";
     rightDiv.appendChild(audioIcon);
